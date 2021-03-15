@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.smart4j</groupId>
+        <artifactId>smart-root</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>smart-plugin-soap</artifactId>
+    <version>1.0</version>
+
+    <name>smart-plugin-soap</name>
+    <description>Smart SOAP Plugin</description>
+    <url>http://www.smart4j.org/</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>huangyong</name>
+            <email>huangyong.java@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@git.oschina.net:huangyong/smart-plugin-soap.git</connection>
+        <developerConnection>scm:git:git@git.oschina.net:huangyong/smart-plugin-soap.git</developerConnection>
+        <url>git@git.oschina.net:huangyong/smart-plugin-soap.git</url>
+    </scm>
+
+    <properties>
+        <junit.version>4.11</junit.version>
+        <servlet.version>3.0.1</servlet.version>
+        <cxf.version>2.6.9</cxf.version>
+        <smart-framework.version>2.3</smart-framework.version>
+    </properties>
+
+    <dependencies>
+        <!-- JUnit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- Servlet -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- CXF -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http</artifactId>
+            <version>${cxf.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxws</artifactId>
+            <version>${cxf.version}</version>
+        </dependency>
+        <!-- Smart -->
+        <dependency>
+            <groupId>org.smart4j</groupId>
+            <artifactId>smart-framework</artifactId>
+            <version>${smart-framework.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>
